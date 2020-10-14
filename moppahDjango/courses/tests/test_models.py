@@ -6,7 +6,7 @@ from django.conf import settings
 
 from model_mommy import mommy
 
-from venv.Scripts.moppahDjango.moppahDjango.courses.models import Course
+from moppahDjango.courses.models import Course
 
 
 class CourseManagerTestCase(TestCase):

@@ -4,7 +4,7 @@ from django.test.client import Client
 from django.urls import reverse
 from django.conf import settings
 
-from venv.Scripts.moppahDjango.moppahDjango.courses.models import Course
+from moppahDjango.courses.models import Course
 
 
 class ContactCourseTestCase(TestCase):
