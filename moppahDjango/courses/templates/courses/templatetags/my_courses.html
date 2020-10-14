@@ -1,0 +1,29 @@
+<li class="pure-menu-heading">
+    Bem-vindo, {{ user }}
+</li>
+{% block menu_options %}
+<li class="pure-menu-heading">Cursos</li>
+{% for enrollment in enrollments %}
+<li>
+    <a href="#">
+        <i class="fa fa-book"></i>
+        {{ enrollment.course }}
+    </a>
+</li>
+{% empty %}
+<li>Nenhum curso encontrado</li>
+{% endfor %}
+<li class="pure-menu-heading">Configurações de Conta</li>
+<li>
+    <a href="{% url 'accounts:edit' %}">
+        <i class="fa fa-cog"></i>
+        Editar Informações
+    </a>
+</li>
+<li>
+    <a href="{% url 'accounts:edit_password' %}">
+        <i class="fa fa-lock"></i>
+        Editar Senha
+    </a>
+</li>
+{% endblock %}
