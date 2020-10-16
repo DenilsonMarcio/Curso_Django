@@ -159,11 +159,11 @@ ALLOWED_HOSTS = ['moppahtechplataform.herokuapp.com']
 
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
-
+"""
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
+"""
 try:
     from moppahDjango.local_settings import *
 except ImportError:
