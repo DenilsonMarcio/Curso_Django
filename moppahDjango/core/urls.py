@@ -1,6 +1,8 @@
 # URLS DO MEU PROJETO EM CORE
 from django.urls import path
-from venv.Scripts.moppahDjango.moppahDjango.core.views import (home, contact)
+from moppahDjango.core.views import (home, contact)
+
+#app_name = 'core'
 
 urlpatterns = [
     path('',home, name='home'),

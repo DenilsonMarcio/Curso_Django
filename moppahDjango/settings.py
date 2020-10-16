@@ -24,8 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'cj7vor=&r@b*o@(8=!6*1zflpnd+0tkv*@ke2ny#7g*$lwsrpx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False   #True
 
+DEBUG = False
+
+#TEMPLATE_DEBUG = True
+
+#ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -83,7 +87,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -102,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-"""
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
@@ -161,7 +165,6 @@ STATICFILES_DIRS = (
 )
 
 try:
-    from venv.Scripts.moppahDjango.moppahDjango.local_settings import *
+    from moppahDjango.local_settings import *
 except ImportError:
     pass
-    

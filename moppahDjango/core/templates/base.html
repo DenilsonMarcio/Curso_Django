@@ -14,16 +14,16 @@
 <body>
 <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="{% url 'home' %}">SIMPLE MOOC</a>
+        <a class="pure-menu-heading" href="{% url 'home' %}">MOPPAHTECH PLATAFORM</a>
         <ul>
-            <li class="pure-menu-selected"><a href="{% url 'home' %}">Início</a></li>
+            <li class="pure-menu-selected"><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'courses:index' %}">Cursos</a></li>
             <li><a href="{% url 'contact' %}">Contato</a></li>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'accounts:dashboard' %}">Painel</a></li>
-            <li><a href="{% url 'accounts:logout' %}">Sair</a></li>
+            <li><a href="{% url 'accounts:dashboard' %}">Dashboard</a></li>
+            <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
             {% else %}
-            <li><a href="{% url 'accounts:login' %}">Entrar</a></li>
+            <li><a href="{% url 'accounts:login' %}">Login</a></li>
             {% endif %}
         </ul>
     </div>
@@ -40,7 +40,7 @@
     {% endif %}
     {% block content %}{% endblock %}
     <div class="footer">
-        Simple MOOC - Uma simples plataforma de ensino a distância
+        MoppahTech Plataform - Sua melhor opção em ensino gratuito a distância 
     </div>
 </div>
 <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>

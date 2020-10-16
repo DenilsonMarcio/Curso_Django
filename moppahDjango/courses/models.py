@@ -3,7 +3,7 @@ from django.conf import settings
 from django.contrib.auth.models import UserManager
 from django.urls import reverse
 from django.utils import timezone
-from venv.Scripts.moppahDjango.moppahDjango.core.mail import send_mail_template
+from moppahDjango.core.mail import send_mail_template
 
 
 
@@ -32,13 +32,13 @@ class Course(models.Model):
 
     def __str__(self):
         return self.name
-    # função ainda não funciona
-    """def get_absolute_url(self):
+    def get_absolute_url(self):
         return reverse('courses:details', args=[self.slug])
     """
+    # função ainda não funciona
     def get_absolute_url(self):
         return ('courses:details', (), {'slug': self.slug})
-    
+    """
     def release_lessons(self):
         today = timezone.now().date()
         return self.lessons.filter(release_date__gte=today)

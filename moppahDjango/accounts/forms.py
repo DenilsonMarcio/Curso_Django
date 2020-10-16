@@ -2,8 +2,8 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
 
-from venv.Scripts.moppahDjango.moppahDjango.core.mail import send_mail_template
-from venv.Scripts.moppahDjango.moppahDjango.core.utils import generate_hash_key
+from moppahDjango.core.mail import send_mail_template
+from moppahDjango.core.utils import generate_hash_key
 
 from .models import PasswordReset
 

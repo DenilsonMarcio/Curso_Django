@@ -1,15 +1,12 @@
 # URLS DO MEU PROJETO EM COURSE
 from django.urls import path, re_path
-from venv.Scripts.moppahDjango.moppahDjango.courses.views import (courses, details, enrollment, announcements, undo_enrollment,show_announcement, lessons, lesson, material)
-#from moppahDjango.courses.views import details
-#from moppahDjango.courses.views import enrollment
-#from moppahDjango.core.views import contact
+from moppahDjango.courses.views import (courses, details, enrollment, announcements, undo_enrollment,show_announcement, lessons, lesson, material)
 
 app_name = 'courses'
 
 urlpatterns = [
     path('',courses, name='index'),
-    #re_path(r'(?P<pk>\d+)/$',details, name='details'), #Adicionar o import re_path
+    #re_path(r'(?P<pk>\d+)/$',details, name='details'), #Adicionar o import re_re_path
     re_path(r'^(?P<slug>[\w_-]+)/$',details, name='details'),
     re_path(r'^(?P<slug>[\w_-]+)/anuncios/$',announcements, name='announcements'),
     re_path(r'^(?P<slug>[\w_-]+)/anuncios/(?P<pk>\d+)/$',show_announcement, name='show_announcement'),

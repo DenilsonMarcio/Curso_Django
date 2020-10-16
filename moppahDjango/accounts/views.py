@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib import messages
 
-from venv.Scripts.moppahDjango.moppahDjango.core.utils import generate_hash_key
+from moppahDjango.core.utils import generate_hash_key
 
 from .forms import (RegisterForm, EditAccountForm, PasswordResetForm)
 from .models import PasswordReset
