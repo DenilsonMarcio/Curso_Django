@@ -3,7 +3,7 @@ from django.conf import settings
 from django.contrib.auth.models import UserManager
 from django.urls import reverse
 from django.utils import timezone
-from moppahDjango.core.mail import send_mail_template
+from venv.Scripts.moppahDjango.moppahDjango.core.mail import send_mail_template
 
 
 

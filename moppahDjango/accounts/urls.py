@@ -1,10 +1,10 @@
 # URLS DO MEU APP ACCOUNTS
 from django.urls import (path, include, re_path)
-from moppahDjango.core.views import (home, contact)
-#from moppahDjango.core.views import contact
-#from moppahDjango.accounts.views import 
-#from moppahDjango.accounts.views import 
-from moppahDjango.accounts.views import (edit, edit_password, password_reset, password_reset_confirm,dashboard,register)
+from venv.Scripts.moppahDjango.moppahDjango.core.views import (home, contact)
+#from venv.Scripts.moppahDjango.moppahDjango.core.views import contact
+#from venv.Scripts.moppahDjango.moppahDjango.accounts.views import 
+#from venv.Scripts.moppahDjango.moppahDjango.accounts.views import 
+from venv.Scripts.moppahDjango.moppahDjango.accounts.views import (edit, edit_password, password_reset, password_reset_confirm,dashboard,register)
 from django.contrib.auth.views import (LoginView, LogoutView)
 #from django.contrib.auth.views import LogoutView
 

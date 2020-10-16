@@ -1,6 +1,6 @@
 # URLS DO MEU PROJETO EM COURSE
 from django.urls import path, re_path
-from moppahDjango.courses.views import (courses, details, enrollment, announcements, undo_enrollment,show_announcement, lessons, lesson, material)
+from venv.Scripts.moppahDjango.moppahDjango.courses.views import (courses, details, enrollment, announcements, undo_enrollment,show_announcement, lessons, lesson, material)
 #from moppahDjango.courses.views import details
 #from moppahDjango.courses.views import enrollment
 #from moppahDjango.core.views import contact

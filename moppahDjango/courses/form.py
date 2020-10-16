@@ -2,7 +2,7 @@ from django import forms
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import Comment
-from moppahDjango.core.mail import send_mail_template
+from venv.Scripts.moppahDjango.moppahDjango.core.mail import send_mail_template
 
 class ContactCourse(forms.Form):
     

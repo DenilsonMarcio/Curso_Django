@@ -161,6 +161,7 @@ STATICFILES_DIRS = (
 )
 
 try:
-    from moppahDjango.local_settings import *
+    from venv.Scripts.moppahDjango.moppahDjango.local_settings import *
 except ImportError:
     pass
+    
