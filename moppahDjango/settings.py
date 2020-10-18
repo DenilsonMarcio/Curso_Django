@@ -41,10 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
-    'accounts',
-    'courses',
-    'forum',
+    'moppahDjango.core',
+    'moppahDjango.accounts',
+    'moppahDjango.courses',
+    'moppahDjango.forum',
     'taggit',
 ]
 
