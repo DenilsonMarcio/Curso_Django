@@ -41,13 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #Libs
+    'moppahDjango.moppahDjango.core',
+    'moppahDjango.moppahDjango.accounts',
+    'moppahDjango.moppahDjango.courses',
+    'moppahDjango.moppahDjango.forum',
     'taggit',
-    #Apps
-    'moppahDjango.core',
-    'moppahDjango.accounts',
-    'moppahDjango.courses',
-    'moppahDjango.forum',
 ]
 
 from django.conf.global_settings import TEMPLATES as TCP
