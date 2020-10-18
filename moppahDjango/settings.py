@@ -55,10 +55,6 @@ TEMPLATES = TCP, (
     'django.core.context_processors.request',
 )
 
-import django_heroku
-django_heroku.settings(locals())
-
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
