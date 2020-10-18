@@ -5,8 +5,6 @@ from django.urls import reverse
 from django.utils import timezone
 from moppahDjango.core.mail import send_mail_template
 
-
-
 class CourseManager(models.Manager):
     
     def search(self, query):
@@ -18,7 +16,7 @@ class CourseManager(models.Manager):
 class Course(models.Model):
 
     name = models.CharField('Nome', max_length=100)
-    slug = models.SlugField('Atalho(SLUG)')
+    slug = models.SlugField('Atalho[SLUG]')
     description = models.TextField('Descrição Simples', blank=True)
     about = models.TextField('Sobre o curso', blank=True)
     start_date = models.DateField('Data de Início', null=True, blank=True)

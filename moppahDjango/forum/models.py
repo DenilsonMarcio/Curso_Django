@@ -3,12 +3,11 @@ from taggit.managers import TaggableManager
 from django.conf import settings
 from django.urls.base import reverse
 
-
 class Thread(models.Model):
 
     title = models.CharField('Título', max_length=100)
     slug = models.SlugField('Identificador', max_length=100, unique=True, default='')
-    body = models.TextField('Mensagem')
+    body = models.TextField('Mensagens')
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL, 
         verbose_name = 'Autor',

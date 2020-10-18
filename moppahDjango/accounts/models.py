@@ -1,16 +1,14 @@
 import re
-
 from django.db import models
 from django.core import validators
 from django.contrib.auth.models import (AbstractBaseUser, PermissionsMixin,
     UserManager)
 from django.conf import settings
 
-
 class User(AbstractBaseUser, PermissionsMixin):
 
     username = models.CharField(
-        'Nome de Usuário', 
+        'Usuário', 
         max_length=30, 
         unique=True,
         validators=[validators.RegexValidator(re.compile(r'^[\w.@+-]+$'),
