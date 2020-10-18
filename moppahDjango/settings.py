@@ -40,11 +40,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    #Libs
+    'taggit',
+    #Apps
     'moppahDjango.core',
     'moppahDjango.accounts',
     'moppahDjango.courses',
+    'moppahDjango.forum',
 ]
+
+from django.conf.global_settings import TEMPLATES as TCP
+TEMPLATES = TCP, (
+    'django.core.context_processors.request',
+)
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

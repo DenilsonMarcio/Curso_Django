@@ -18,10 +18,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.autodiscover()
+
 urlpatterns = [
     path('', include('moppahDjango.core.urls')),
     path('conta/', include('moppahDjango.accounts.urls', namespace='accounts')),
     path('cursos/', include('moppahDjango.courses.urls')),
+    path('forum/', include('moppahDjango.forum.urls')),
     path('admin/', admin.site.urls),
 ]
 

@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple MOOC - Uma simples plataforma de ensino a distância" />
-    <title>Simple MOOC</title>
+    <meta name="description" content="" />
+    <title>MOPPAHTECH PLATAFORM</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    
     
 </head>
 <body>
@@ -18,6 +19,7 @@
         <ul>
             <li class="pure-menu-selected"><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'courses:index' %}">Cursos</a></li>
+            <li><a href="{% url 'forum:index' %}">Fórum</a></li>
             <li><a href="{% url 'contact' %}">Contato</a></li>
             {% if user.is_authenticated %}
             <li><a href="{% url 'accounts:dashboard' %}">Dashboard</a></li>
@@ -44,5 +46,7 @@
     </div>
 </div>
 <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+{% block scripts %}{% endblock %}
 </body>
 </html>
